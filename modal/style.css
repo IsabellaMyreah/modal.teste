@@ -1,0 +1,44 @@
+.button{
+    padding: 10px;
+    background-color: rgb(168, 33, 168);
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.button:hover{
+   background-color: rgb(255, 41, 191);
+   color: white;
+   transition: 1s;
+}
+
+.modal{
+    width: 500px;
+    height: 500px;
+    background-color:rgb(168, 33, 168) ;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+@keyframes animate{
+    from{opacity : 1;}
+    from{opacity : 0;}
+}
+
+.fechar{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(238, 125, 241);
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
